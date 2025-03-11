@@ -1,0 +1,14 @@
+#insertion sort
+START 
+  READ array A of size N 
+  FOR i = 1 TO N-1 
+    KEY = A[i] 
+    j = i - 1 
+    WHILE j >= 0 AND A[j] > KEY DO 
+      A[j + 1] = A[j] 
+      j = j - 1 
+    END WHILE 
+    A[j + 1] = KEY 
+  END FOR 
+PRINT sorted array A 
+END
